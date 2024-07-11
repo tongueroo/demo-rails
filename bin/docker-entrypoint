@@ -1,8 +1,14 @@
 #!/bin/bash -e
 
-# If running the rails server then create or migrate existing database
-if [ "${1}" == "./bin/rails" ] && [ "${2}" == "server" ]; then
-  ./bin/rails db:prepare
-fi
+# fake server for now
+while true; do
+  date
+  sleep 5
+done
 
-exec "${@}"
+# # If running the rails server then create or migrate existing database
+# if [ "${1}" == "./bin/rails" ] && [ "${2}" == "server" ]; then
+#   ./bin/rails db:prepare
+# fi
+
+# exec "${@}"
